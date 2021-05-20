@@ -9,14 +9,17 @@ package parcial.pkg2;
  *
  * @author aleja
  */
-public class Jugador {
+public class Jugador extends Persona{
     private String apodoJugador;
     private String rollJugador;
 
-    public Jugador(String apodoJugador, String rollJugador) {
+    public Jugador(String apodoJugador, String rollJugador, String nombre, String identificacion, int edad, String nacionalidad) {
+        super(nombre, identificacion, edad, nacionalidad);
         this.apodoJugador = apodoJugador;
         this.rollJugador = rollJugador;
     }
+
+    
 
     public String getApodoJugador() {
         return apodoJugador;
