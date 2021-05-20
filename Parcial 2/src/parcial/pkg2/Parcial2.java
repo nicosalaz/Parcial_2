@@ -31,12 +31,20 @@ public class Parcial2 {
     }
     public static Jugador get_jugador(){
         Scanner entrada = new Scanner(System.in);
+        Scanner str = new Scanner(System.in);
         System.out.println("apodo: ");
         String apodo = entrada.nextLine();
         System.out.println("rol: ");
         String rol = entrada.nextLine();
-        Jugador j = new Jugador(apodo,rol);
-        
+        System.out.println("nombre: ");
+        String nombre = str.nextLine();
+        System.out.println("identificacion: ");
+        String identificacion = str.nextLine();
+        System.out.println("edad: ");
+        int edad = entrada.nextInt();
+        System.out.println("nacionalidad: ");
+        String nacio = str.nextLine();
+        Jugador j = new Jugador(apodo, rol, nombre, identificacion, edad, nacio);
         return j;
     }
     public static Torneo get_torneo(){
